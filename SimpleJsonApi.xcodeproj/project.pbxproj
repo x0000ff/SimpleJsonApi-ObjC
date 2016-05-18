@@ -147,8 +147,8 @@
 		DBA110D21CECD9EB006CBB40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DBA111021CECF881006CBB40 /* Categories */,
 				DBA110D31CECD9EE006CBB40 /* AppDelegate */,
+				DBA111021CECF881006CBB40 /* Categories */,
 				DBA110EA1CECDF1E006CBB40 /* Models */,
 				DBA110D81CECDC51006CBB40 /* Network */,
 				DBA110D41CECD9F9006CBB40 /* VC */,
@@ -278,7 +278,7 @@
 			children = (
 				DBA111031CECF88A006CBB40 /* NSString+EscapeURL */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		DBA111031CECF88A006CBB40 /* NSString+EscapeURL */ = {
@@ -287,7 +287,7 @@
 				DBA111041CECF89B006CBB40 /* NSString+EscapeURL.h */,
 				DBA111051CECF89B006CBB40 /* NSString+EscapeURL.m */,
 			);
-			name = "NSString+EscapeURL";
+			path = "NSString+EscapeURL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
