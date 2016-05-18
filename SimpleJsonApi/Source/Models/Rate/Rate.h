@@ -1,5 +1,5 @@
 //
-//  RatesTVC.m
+//  Rate.h
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -7,21 +7,19 @@
 //
 
 //##############################################################################
-#import "RatesTVC.h"
+#import <Foundation/Foundation.h>
 
 //##############################################################################
-@interface RatesTVC ()
-
-@end
+@interface Rate : NSObject
 
 //##############################################################################
-@implementation RatesTVC
+@property (strong, nonatomic) NSString * rId;
+@property (strong, nonatomic) NSString * name;
+@property (strong, nonatomic) NSNumber * rate;
+@property (strong, nonatomic) NSDate   * date;
 
 //##############################################################################
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+- (instancetype) initWithDictionary:(NSDictionary *)dictionary;
 
 //##############################################################################
 @end

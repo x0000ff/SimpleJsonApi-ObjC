@@ -1,5 +1,5 @@
 //
-//  RatesTVC.m
+//  RateBuilder.h
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -7,21 +7,14 @@
 //
 
 //##############################################################################
-#import "RatesTVC.h"
+#import <Foundation/Foundation.h>
+#import "Rate.h"
 
 //##############################################################################
-@interface RatesTVC ()
-
-@end
+@interface RateBuilder : NSObject
 
 //##############################################################################
-@implementation RatesTVC
-
-//##############################################################################
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+- (NSArray<Rate *> *) parseRateFromJSONResponse:(NSString *)jsonResponse;
 
 //##############################################################################
 @end

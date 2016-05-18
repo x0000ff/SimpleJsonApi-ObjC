@@ -1,5 +1,5 @@
 //
-//  RatesTVC.m
+//  XCTestCase+Fixture.h
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -7,21 +7,13 @@
 //
 
 //##############################################################################
-#import "RatesTVC.h"
+#import <XCTest/XCTest.h>
 
 //##############################################################################
-@interface RatesTVC ()
-
-@end
+@interface XCTestCase (Fixture)
 
 //##############################################################################
-@implementation RatesTVC
-
-//##############################################################################
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+- (NSString *) fixtureWithFileName:(NSString *)fileName extension:(NSString *)extension;
 
 //##############################################################################
 @end

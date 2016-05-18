@@ -14,7 +14,26 @@
 		DBA110C61CECCF69006CBB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C41CECCF69006CBB40 /* Main.storyboard */; };
 		DBA110C81CECCF69006CBB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C71CECCF69006CBB40 /* Assets.xcassets */; };
 		DBA110CB1CECCF69006CBB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C91CECCF69006CBB40 /* LaunchScreen.storyboard */; };
+		DBA110DB1CECDD9B006CBB40 /* RatesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110DA1CECDD9B006CBB40 /* RatesAPI.m */; };
+		DBA110E31CECDDD8006CBB40 /* RateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110E21CECDDD8006CBB40 /* RateTests.m */; };
+		DBA110EE1CECDF2A006CBB40 /* Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110ED1CECDF2A006CBB40 /* Rate.m */; };
+		DBA110F11CECE88F006CBB40 /* RateBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110F01CECE88F006CBB40 /* RateBuilderTests.m */; };
+		DBA110F51CECE925006CBB40 /* rate-response.json in Sources */ = {isa = PBXBuildFile; fileRef = DBA110F41CECE925006CBB40 /* rate-response.json */; };
+		DBA110FA1CECE9E9006CBB40 /* XCTestCase+Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110F91CECE9E9006CBB40 /* XCTestCase+Fixture.m */; };
+		DBA110FB1CECEBAC006CBB40 /* rate-response.json in Resources */ = {isa = PBXBuildFile; fileRef = DBA110F41CECE925006CBB40 /* rate-response.json */; };
+		DBA110FF1CECEC46006CBB40 /* RateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110FE1CECEC46006CBB40 /* RateBuilder.m */; };
+		DBA111011CECEF48006CBB40 /* RateEqaulityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA111001CECEF48006CBB40 /* RateEqaulityTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA110E51CECDDD8006CBB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA110B01CECCF69006CBB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA110B71CECCF69006CBB40;
+			remoteInfo = SimpleJsonApi;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		56797A6AECA9B7E131FF0CC3 /* Pods-SimpleJsonApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleJsonApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleJsonApi/Pods-SimpleJsonApi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -29,6 +48,20 @@
 		DBA110C71CECCF69006CBB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA110CA1CECCF69006CBB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA110CC1CECCF69006CBB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA110D91CECDD9B006CBB40 /* RatesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatesAPI.h; sourceTree = "<group>"; };
+		DBA110DA1CECDD9B006CBB40 /* RatesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatesAPI.m; sourceTree = "<group>"; };
+		DBA110E01CECDDD8006CBB40 /* SimpleJsonApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleJsonApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA110E21CECDDD8006CBB40 /* RateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateTests.m; sourceTree = "<group>"; };
+		DBA110E41CECDDD8006CBB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA110EC1CECDF2A006CBB40 /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		DBA110ED1CECDF2A006CBB40 /* Rate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rate.m; sourceTree = "<group>"; };
+		DBA110F01CECE88F006CBB40 /* RateBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateBuilderTests.m; sourceTree = "<group>"; };
+		DBA110F41CECE925006CBB40 /* rate-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rate-response.json"; sourceTree = "<group>"; };
+		DBA110F81CECE9E9006CBB40 /* XCTestCase+Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Fixture.h"; sourceTree = "<group>"; };
+		DBA110F91CECE9E9006CBB40 /* XCTestCase+Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Fixture.m"; sourceTree = "<group>"; };
+		DBA110FD1CECEC46006CBB40 /* RateBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateBuilder.h; sourceTree = "<group>"; };
+		DBA110FE1CECEC46006CBB40 /* RateBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateBuilder.m; sourceTree = "<group>"; };
+		DBA111001CECEF48006CBB40 /* RateEqaulityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateEqaulityTests.m; sourceTree = "<group>"; };
 		E6589D1B269882C8752B7C9A /* libPods-SimpleJsonApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleJsonApi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -38,6 +71,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4238E9C86D229801620A1CE2 /* libPods-SimpleJsonApi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA110DD1CECDDD8006CBB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +108,7 @@
 				C6D6210346A725969E2F9395 /* Pods */,
 				DBA110B91CECCF69006CBB40 /* Products */,
 				DBA110BA1CECCF69006CBB40 /* SimpleJsonApi */,
+				DBA110E11CECDDD8006CBB40 /* SimpleJsonApiTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA110B81CECCF69006CBB40 /* SimpleJsonApi.app */,
+				DBA110E01CECDDD8006CBB40 /* SimpleJsonApiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				DBA110D31CECD9EE006CBB40 /* AppDelegate */,
+				DBA110EA1CECDF1E006CBB40 /* Models */,
+				DBA110D81CECDC51006CBB40 /* Network */,
 				DBA110D41CECD9F9006CBB40 /* VC */,
 			);
 			path = Source;
@@ -151,6 +195,80 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DBA110D81CECDC51006CBB40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110D91CECDD9B006CBB40 /* RatesAPI.h */,
+				DBA110DA1CECDD9B006CBB40 /* RatesAPI.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DBA110E11CECDDD8006CBB40 /* SimpleJsonApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110F21CECE909006CBB40 /* Fixtures */,
+				DBA110F61CECE9CC006CBB40 /* Helpers */,
+				DBA110F31CECE90F006CBB40 /* Tests */,
+				DBA110E41CECDDD8006CBB40 /* Info.plist */,
+			);
+			path = SimpleJsonApiTests;
+			sourceTree = "<group>";
+		};
+		DBA110EA1CECDF1E006CBB40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110EB1CECDF21006CBB40 /* Rate */,
+				DBA110FC1CECEC31006CBB40 /* RateBuilder */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBA110EB1CECDF21006CBB40 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110EC1CECDF2A006CBB40 /* Rate.h */,
+				DBA110ED1CECDF2A006CBB40 /* Rate.m */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		DBA110F21CECE909006CBB40 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110F41CECE925006CBB40 /* rate-response.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		DBA110F31CECE90F006CBB40 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110F01CECE88F006CBB40 /* RateBuilderTests.m */,
+				DBA111001CECEF48006CBB40 /* RateEqaulityTests.m */,
+				DBA110E21CECDDD8006CBB40 /* RateTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DBA110F61CECE9CC006CBB40 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110F81CECE9E9006CBB40 /* XCTestCase+Fixture.h */,
+				DBA110F91CECE9E9006CBB40 /* XCTestCase+Fixture.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBA110FC1CECEC31006CBB40 /* RateBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110FD1CECEC46006CBB40 /* RateBuilder.h */,
+				DBA110FE1CECEC46006CBB40 /* RateBuilder.m */,
+			);
+			path = RateBuilder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +292,24 @@
 			productReference = DBA110B81CECCF69006CBB40 /* SimpleJsonApi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DBA110DF1CECDDD8006CBB40 /* SimpleJsonApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA110E91CECDDD8006CBB40 /* Build configuration list for PBXNativeTarget "SimpleJsonApiTests" */;
+			buildPhases = (
+				DBA110DC1CECDDD8006CBB40 /* Sources */,
+				DBA110DD1CECDDD8006CBB40 /* Frameworks */,
+				DBA110DE1CECDDD8006CBB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA110E61CECDDD8006CBB40 /* PBXTargetDependency */,
+			);
+			name = SimpleJsonApiTests;
+			productName = SimpleJsonApiTests;
+			productReference = DBA110E01CECDDD8006CBB40 /* SimpleJsonApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +321,10 @@
 				TargetAttributes = {
 					DBA110B71CECCF69006CBB40 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					DBA110DF1CECDDD8006CBB40 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DBA110B71CECCF69006CBB40;
 					};
 				};
 			};
@@ -202,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				DBA110B71CECCF69006CBB40 /* SimpleJsonApi */,
+				DBA110DF1CECDDD8006CBB40 /* SimpleJsonApiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +355,14 @@
 				DBA110CB1CECCF69006CBB40 /* LaunchScreen.storyboard in Resources */,
 				DBA110C81CECCF69006CBB40 /* Assets.xcassets in Resources */,
 				DBA110C61CECCF69006CBB40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA110DE1CECDDD8006CBB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA110FB1CECEBAC006CBB40 /* rate-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +421,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA110EE1CECDF2A006CBB40 /* Rate.m in Sources */,
 				DBA110C31CECCF69006CBB40 /* RatesTVC.m in Sources */,
 				DBA110C01CECCF69006CBB40 /* AppDelegate.m in Sources */,
+				DBA110DB1CECDD9B006CBB40 /* RatesAPI.m in Sources */,
 				DBA110BD1CECCF69006CBB40 /* main.m in Sources */,
+				DBA110FF1CECEC46006CBB40 /* RateBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA110DC1CECDDD8006CBB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA110FA1CECE9E9006CBB40 /* XCTestCase+Fixture.m in Sources */,
+				DBA110E31CECDDD8006CBB40 /* RateTests.m in Sources */,
+				DBA110F51CECE925006CBB40 /* rate-response.json in Sources */,
+				DBA111011CECEF48006CBB40 /* RateEqaulityTests.m in Sources */,
+				DBA110F11CECE88F006CBB40 /* RateBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA110E61CECDDD8006CBB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA110B71CECCF69006CBB40 /* SimpleJsonApi */;
+			targetProxy = DBA110E51CECDDD8006CBB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DBA110C41CECCF69006CBB40 /* Main.storyboard */ = {
@@ -408,6 +580,30 @@
 			};
 			name = Release;
 		};
+		DBA110E71CECDDD8006CBB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleJsonApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x0000ff.SimpleJsonApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleJsonApi.app/SimpleJsonApi";
+			};
+			name = Debug;
+		};
+		DBA110E81CECDDD8006CBB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleJsonApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x0000ff.SimpleJsonApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleJsonApi.app/SimpleJsonApi";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +621,15 @@
 			buildConfigurations = (
 				DBA110D01CECCF69006CBB40 /* Debug */,
 				DBA110D11CECCF69006CBB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA110E91CECDDD8006CBB40 /* Build configuration list for PBXNativeTarget "SimpleJsonApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA110E71CECDDD8006CBB40 /* Debug */,
+				DBA110E81CECDDD8006CBB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

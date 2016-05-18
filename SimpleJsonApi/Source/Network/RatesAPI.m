@@ -1,5 +1,5 @@
 //
-//  RatesTVC.m
+//  RatesAPI.m
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -7,21 +7,10 @@
 //
 
 //##############################################################################
-#import "RatesTVC.h"
+#import "RatesAPI.h"
 
 //##############################################################################
-@interface RatesTVC ()
-
-@end
-
-//##############################################################################
-@implementation RatesTVC
-
-//##############################################################################
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+@implementation RatesAPI
 
 //##############################################################################
 @end
