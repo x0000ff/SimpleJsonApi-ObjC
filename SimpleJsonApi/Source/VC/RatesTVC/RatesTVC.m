@@ -30,6 +30,8 @@
     [super viewDidLoad];
 
     self.ratesAPI = [[RatesAPI alloc] init];
+
+    [self addRefreshControl];
 }
 
 //##############################################################################
@@ -38,21 +40,67 @@
     [super viewDidAppear:animated];
 
     if (self.rates.count == 0) {
-        __weak __typeof(self)weakSelf = self;
-        [self.ratesAPI getRates:^(NSArray<Rate *> *rates) {
-            NSLog(@"RATES: %@", rates);
-            __strong __typeof(weakSelf)strongSelf = weakSelf;
-            strongSelf.rates = rates;
-
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [strongSelf.tableView reloadData];
-            });
-
-        } failure:^(NSError *error) {
-            NSLog(@"FAILURE: %@", error);
-        }];
+        [self loadRates];
     }
 }
+
+//##############################################################################
+#pragma mark - UI
+
+//##############################################################################
+- (void) addRefreshControl {
+
+    UIRefreshControl * refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(loadRates:) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+}
+
+//##############################################################################
+#pragma mark - Network
+
+//##############################################################################
+- (void) loadRates {
+
+    __weak __typeof(self)weakSelf = self;
+
+#warning TODO: Show spinner
+    [self.ratesAPI getRates:^(NSArray<Rate *> *rates) {
+
+#warning TODO: Hide spinner
+        NSLog(@"RATES: %@", rates);
+
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        strongSelf.rates = rates;
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [strongSelf.tableView reloadData];
+        });
+
+    } failure:^(NSError *error) {
+
+        NSLog(@"FAILURE: %@", error);
+
+#warning TODO: Hide spinner
+#warning TODO: Show Error
+
+    }];
+}
+
+//##############################################################################
+#pragma mark - Actions
+
+//##############################################################################
+- (IBAction) loadRates:(id)sender {
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.refreshControl endRefreshing];
+    });
+
+    [self loadRates];
+}
+
+//##############################################################################
+#pragma mark - UITAbleViewDataSource
 
 //##############################################################################
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -67,7 +115,7 @@
 
     Rate * rate = (indexPath.row < self.rates.count) ? self.rates[indexPath.row] : nil;
     cell.textLabel.text = rate.name;
-    cell.detailTextLabel.text = rate.rate.description;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f", rate.rate.floatValue];
 
     return cell;
 }
