@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RatesTVC.h
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RatesTVC : UITableViewController
 
 @end
 

@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4238E9C86D229801620A1CE2 /* libPods-SimpleJsonApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6589D1B269882C8752B7C9A /* libPods-SimpleJsonApi.a */; };
 		DBA110BD1CECCF69006CBB40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110BC1CECCF69006CBB40 /* main.m */; };
 		DBA110C01CECCF69006CBB40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110BF1CECCF69006CBB40 /* AppDelegate.m */; };
-		DBA110C31CECCF69006CBB40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110C21CECCF69006CBB40 /* ViewController.m */; };
+		DBA110C31CECCF69006CBB40 /* RatesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110C21CECCF69006CBB40 /* RatesTVC.m */; };
 		DBA110C61CECCF69006CBB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C41CECCF69006CBB40 /* Main.storyboard */; };
 		DBA110C81CECCF69006CBB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C71CECCF69006CBB40 /* Assets.xcassets */; };
 		DBA110CB1CECCF69006CBB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA110C91CECCF69006CBB40 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56797A6AECA9B7E131FF0CC3 /* Pods-SimpleJsonApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleJsonApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleJsonApi/Pods-SimpleJsonApi.debug.xcconfig"; sourceTree = "<group>"; };
+		9C70C5B84EF2A4C2EA1F2FAE /* Pods-SimpleJsonApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleJsonApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleJsonApi/Pods-SimpleJsonApi.release.xcconfig"; sourceTree = "<group>"; };
 		DBA110B81CECCF69006CBB40 /* SimpleJsonApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleJsonApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA110BC1CECCF69006CBB40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBA110BE1CECCF69006CBB40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBA110BF1CECCF69006CBB40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBA110C11CECCF69006CBB40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DBA110C21CECCF69006CBB40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBA110C11CECCF69006CBB40 /* RatesTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatesTVC.h; sourceTree = "<group>"; };
+		DBA110C21CECCF69006CBB40 /* RatesTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatesTVC.m; sourceTree = "<group>"; };
 		DBA110C51CECCF69006CBB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA110C71CECCF69006CBB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA110CA1CECCF69006CBB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA110CC1CECCF69006CBB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6589D1B269882C8752B7C9A /* libPods-SimpleJsonApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleJsonApi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4238E9C86D229801620A1CE2 /* libPods-SimpleJsonApi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDB677964D179F6ED3503B36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6589D1B269882C8752B7C9A /* libPods-SimpleJsonApi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D6210346A725969E2F9395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56797A6AECA9B7E131FF0CC3 /* Pods-SimpleJsonApi.debug.xcconfig */,
+				9C70C5B84EF2A4C2EA1F2FAE /* Pods-SimpleJsonApi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DBA110AF1CECCF69006CBB40 = {
 			isa = PBXGroup;
 			children = (
-				DBA110BA1CECCF69006CBB40 /* SimpleJsonApi */,
+				BDB677964D179F6ED3503B36 /* Frameworks */,
+				C6D6210346A725969E2F9395 /* Pods */,
 				DBA110B91CECCF69006CBB40 /* Products */,
+				DBA110BA1CECCF69006CBB40 /* SimpleJsonApi */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +82,11 @@
 		DBA110BA1CECCF69006CBB40 /* SimpleJsonApi */ = {
 			isa = PBXGroup;
 			children = (
-				DBA110BE1CECCF69006CBB40 /* AppDelegate.h */,
-				DBA110BF1CECCF69006CBB40 /* AppDelegate.m */,
-				DBA110C11CECCF69006CBB40 /* ViewController.h */,
-				DBA110C21CECCF69006CBB40 /* ViewController.m */,
-				DBA110C41CECCF69006CBB40 /* Main.storyboard */,
-				DBA110C71CECCF69006CBB40 /* Assets.xcassets */,
-				DBA110C91CECCF69006CBB40 /* LaunchScreen.storyboard */,
-				DBA110CC1CECCF69006CBB40 /* Info.plist */,
+				DBA110D71CECDA34006CBB40 /* Resources */,
+				DBA110D21CECD9EB006CBB40 /* Source */,
+				DBA110D61CECDA2A006CBB40 /* Storyboards */,
 				DBA110BB1CECCF69006CBB40 /* Supporting Files */,
+				DBA110CC1CECCF69006CBB40 /* Info.plist */,
 			);
 			path = SimpleJsonApi;
 			sourceTree = "<group>";
@@ -76,7 +96,59 @@
 			children = (
 				DBA110BC1CECCF69006CBB40 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBA110D21CECD9EB006CBB40 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110D31CECD9EE006CBB40 /* AppDelegate */,
+				DBA110D41CECD9F9006CBB40 /* VC */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DBA110D31CECD9EE006CBB40 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110BE1CECCF69006CBB40 /* AppDelegate.h */,
+				DBA110BF1CECCF69006CBB40 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DBA110D41CECD9F9006CBB40 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110D51CECD9FC006CBB40 /* RatesTVC */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBA110D51CECD9FC006CBB40 /* RatesTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110C11CECCF69006CBB40 /* RatesTVC.h */,
+				DBA110C21CECCF69006CBB40 /* RatesTVC.m */,
+			);
+			path = RatesTVC;
+			sourceTree = "<group>";
+		};
+		DBA110D61CECDA2A006CBB40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110C91CECCF69006CBB40 /* LaunchScreen.storyboard */,
+				DBA110C41CECCF69006CBB40 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DBA110D71CECDA34006CBB40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBA110C71CECCF69006CBB40 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBA110CF1CECCF69006CBB40 /* Build configuration list for PBXNativeTarget "SimpleJsonApi" */;
 			buildPhases = (
+				FE3BE7D1EF5CCA727D3036CA /* Check Pods Manifest.lock */,
 				DBA110B41CECCF69006CBB40 /* Sources */,
 				DBA110B51CECCF69006CBB40 /* Frameworks */,
 				DBA110B61CECCF69006CBB40 /* Resources */,
+				F24851C95D0CF82FC651FBCF /* Embed Pods Frameworks */,
+				EB2D4A8F89E088D37398A2CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,12 +219,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EB2D4A8F89E088D37398A2CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleJsonApi/Pods-SimpleJsonApi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24851C95D0CF82FC651FBCF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleJsonApi/Pods-SimpleJsonApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3BE7D1EF5CCA727D3036CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBA110B41CECCF69006CBB40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA110C31CECCF69006CBB40 /* ViewController.m in Sources */,
+				DBA110C31CECCF69006CBB40 /* RatesTVC.m in Sources */,
 				DBA110C01CECCF69006CBB40 /* AppDelegate.m in Sources */,
 				DBA110BD1CECCF69006CBB40 /* main.m in Sources */,
 			);
@@ -164,6 +287,7 @@
 				DBA110C51CECCF69006CBB40 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		DBA110C91CECCF69006CBB40 /* LaunchScreen.storyboard */ = {
@@ -172,6 +296,7 @@
 				DBA110CA1CECCF69006CBB40 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +386,7 @@
 		};
 		DBA110D01CECCF69006CBB40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56797A6AECA9B7E131FF0CC3 /* Pods-SimpleJsonApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleJsonApi/Info.plist;
@@ -272,6 +398,7 @@
 		};
 		DBA110D11CECCF69006CBB40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C70C5B84EF2A4C2EA1F2FAE /* Pods-SimpleJsonApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleJsonApi/Info.plist;
@@ -300,6 +427,7 @@
 				DBA110D11CECCF69006CBB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

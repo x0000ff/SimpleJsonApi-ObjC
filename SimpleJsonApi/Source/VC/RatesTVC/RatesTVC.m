@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  RatesTVC.m
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
 //  Copyright © 2016 x0000ff. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RatesTVC.h"
 
-@interface ViewController ()
+@interface RatesTVC ()
 
 @end
 
-@implementation ViewController
+@implementation RatesTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
