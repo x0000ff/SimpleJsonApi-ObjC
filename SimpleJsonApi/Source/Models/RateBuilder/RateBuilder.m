@@ -27,8 +27,17 @@
     NSDictionary * jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsonData
                                                                     options:0
                                                                       error:nil];
-    
-    NSArray * jsonRates = [jsonDictionary valueForKeyPath:@"query.results.rate"];
+    return [self parseRateFromJSON:jsonDictionary];
+}
+
+//##############################################################################
+- (NSArray<Rate *> *) parseRateFromJSON:(NSDictionary *)json {
+
+    if (![json isKindOfClass:NSDictionary.class]) {
+        return nil;
+    }
+
+    NSArray * jsonRates = [json valueForKeyPath:@"query.results.rate"];
     if (![jsonRates isKindOfClass:NSArray.class]) {
         return nil;
     }

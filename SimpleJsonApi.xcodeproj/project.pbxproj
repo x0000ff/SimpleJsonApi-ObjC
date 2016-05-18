@@ -23,6 +23,7 @@
 		DBA110FB1CECEBAC006CBB40 /* rate-response.json in Resources */ = {isa = PBXBuildFile; fileRef = DBA110F41CECE925006CBB40 /* rate-response.json */; };
 		DBA110FF1CECEC46006CBB40 /* RateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA110FE1CECEC46006CBB40 /* RateBuilder.m */; };
 		DBA111011CECEF48006CBB40 /* RateEqaulityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA111001CECEF48006CBB40 /* RateEqaulityTests.m */; };
+		DBA111061CECF89B006CBB40 /* NSString+EscapeURL.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA111051CECF89B006CBB40 /* NSString+EscapeURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		DBA110FD1CECEC46006CBB40 /* RateBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateBuilder.h; sourceTree = "<group>"; };
 		DBA110FE1CECEC46006CBB40 /* RateBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateBuilder.m; sourceTree = "<group>"; };
 		DBA111001CECEF48006CBB40 /* RateEqaulityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateEqaulityTests.m; sourceTree = "<group>"; };
+		DBA111041CECF89B006CBB40 /* NSString+EscapeURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EscapeURL.h"; sourceTree = "<group>"; };
+		DBA111051CECF89B006CBB40 /* NSString+EscapeURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EscapeURL.m"; sourceTree = "<group>"; };
 		E6589D1B269882C8752B7C9A /* libPods-SimpleJsonApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleJsonApi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +147,7 @@
 		DBA110D21CECD9EB006CBB40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DBA111021CECF881006CBB40 /* Categories */,
 				DBA110D31CECD9EE006CBB40 /* AppDelegate */,
 				DBA110EA1CECDF1E006CBB40 /* Models */,
 				DBA110D81CECDC51006CBB40 /* Network */,
@@ -267,6 +271,23 @@
 				DBA110FE1CECEC46006CBB40 /* RateBuilder.m */,
 			);
 			path = RateBuilder;
+			sourceTree = "<group>";
+		};
+		DBA111021CECF881006CBB40 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DBA111031CECF88A006CBB40 /* NSString+EscapeURL */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		DBA111031CECF88A006CBB40 /* NSString+EscapeURL */ = {
+			isa = PBXGroup;
+			children = (
+				DBA111041CECF89B006CBB40 /* NSString+EscapeURL.h */,
+				DBA111051CECF89B006CBB40 /* NSString+EscapeURL.m */,
+			);
+			name = "NSString+EscapeURL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +445,7 @@
 				DBA110EE1CECDF2A006CBB40 /* Rate.m in Sources */,
 				DBA110C31CECCF69006CBB40 /* RatesTVC.m in Sources */,
 				DBA110C01CECCF69006CBB40 /* AppDelegate.m in Sources */,
+				DBA111061CECF89B006CBB40 /* NSString+EscapeURL.m in Sources */,
 				DBA110DB1CECDD9B006CBB40 /* RatesAPI.m in Sources */,
 				DBA110BD1CECCF69006CBB40 /* main.m in Sources */,
 				DBA110FF1CECEC46006CBB40 /* RateBuilder.m in Sources */,

@@ -9,8 +9,17 @@
 //##############################################################################
 #import <Foundation/Foundation.h>
 
+#import "Rate.h"
+
 //##############################################################################
 @interface RatesAPI : NSObject
+
+//##############################################################################
+typedef void (^GetRatesSuccessCallback) (NSArray<Rate *> * rates);
+typedef void (^FailureCallback) (NSError * error);
+
+//##############################################################################
+- (void) getRates:(GetRatesSuccessCallback)success failure:(FailureCallback)failure;
 
 //##############################################################################
 @end

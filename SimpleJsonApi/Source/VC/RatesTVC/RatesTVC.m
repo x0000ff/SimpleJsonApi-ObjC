@@ -9,8 +9,12 @@
 //##############################################################################
 #import "RatesTVC.h"
 
+#import "RatesAPI.h"
+
 //##############################################################################
 @interface RatesTVC ()
+
+@property (strong, nonatomic) RatesAPI * ratesAPI;
 
 @end
 
@@ -18,9 +22,25 @@
 @implementation RatesTVC
 
 //##############################################################################
+#pragma mark - Overrides
+
+//##############################################################################
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.ratesAPI = [[RatesAPI alloc] init];
+}
+
+//##############################################################################
+- (void) viewDidAppear:(BOOL)animated {
+
+    [super viewDidAppear:animated];
+
+    [self.ratesAPI getRates:^(NSArray<Rate *> *rates) {
+        NSLog(@"RATES: %@", rates);
+    } failure:^(NSError *error) {
+        NSLog(@"FAILURE: %@", error);
+    }];
 }
 
 //##############################################################################

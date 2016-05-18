@@ -1,5 +1,5 @@
 //
-//  RateBuilder.h
+//  NSString+EscapeURL.h
 //  SimpleJsonApi
 //
 //  Created by x0000ff on 18/05/16.
@@ -8,14 +8,12 @@
 
 //##############################################################################
 #import <Foundation/Foundation.h>
-#import "Rate.h"
 
 //##############################################################################
-@interface RateBuilder : NSObject
+@interface NSString (EscapeURL)
 
 //##############################################################################
-- (NSArray<Rate *> *) parseRateFromJSONResponse:(NSString *)jsonResponse;
-- (NSArray<Rate *> *) parseRateFromJSON:(NSDictionary *)json;
+- (NSString *) escapeForURL;
 
 //##############################################################################
 @end

@@ -58,6 +58,17 @@
 }
 
 //##############################################################################
+- (NSString *)description {
+
+    return [NSString stringWithFormat:@"[%@] rId: %@; name: %@; rate: %@; date: %@",
+            NSStringFromClass(self.class),
+            self.rId,
+            self.name,
+            self.rate,
+            self.date];
+}
+
+//##############################################################################
 - (BOOL)isEqual:(id)object {
 
     if (![object isKindOfClass:self.class]) {
