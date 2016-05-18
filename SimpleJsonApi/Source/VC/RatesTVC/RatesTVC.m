@@ -11,6 +11,8 @@
 
 #import "RatesAPI.h"
 
+#import <MBProgressHUD/MBProgressHUD.h>
+
 //##############################################################################
 @interface RatesTVC ()
 
@@ -63,25 +65,31 @@
 
     __weak __typeof(self)weakSelf = self;
 
-#warning TODO: Show spinner
-    [self.ratesAPI getRates:^(NSArray<Rate *> *rates) {
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    __weak __typeof(hud)weakHUD = hud;
 
-#warning TODO: Hide spinner
-        NSLog(@"RATES: %@", rates);
+    [self.ratesAPI getRates:^(NSArray<Rate *> *rates) {
 
         __strong __typeof(weakSelf)strongSelf = weakSelf;
         strongSelf.rates = rates;
 
         dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:strongSelf.view animated:YES];
             [strongSelf.tableView reloadData];
         });
 
     } failure:^(NSError *error) {
 
-        NSLog(@"FAILURE: %@", error);
+        dispatch_async(dispatch_get_main_queue(), ^{
 
-#warning TODO: Hide spinner
-#warning TODO: Show Error
+            weakHUD.mode = MBProgressHUDModeText;
+
+            weakHUD.labelText = @"Error";
+            weakHUD.detailsLabelText = error.localizedDescription;
+            [weakHUD hide:YES afterDelay:2];
+
+            [weakSelf.tableView reloadData];
+        });
 
     }];
 }
@@ -92,15 +100,18 @@
 //##############################################################################
 - (IBAction) loadRates:(id)sender {
 
+    __weak __typeof(self)weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.refreshControl endRefreshing];
+        [weakSelf.refreshControl endRefreshing];
     });
 
-    [self loadRates];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [weakSelf loadRates];
+    });
 }
 
 //##############################################################################
-#pragma mark - UITAbleViewDataSource
+#pragma mark - UITableViewDataSource
 
 //##############################################################################
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
