@@ -55,6 +55,10 @@ Response:
 }
 ```
 
+# Example
+
+![](example.gif)
+
 # Libraries
 
 - [https://github.com/AFNetworking/AFNetworking](https://github.com/AFNetworking/AFNetworking)
