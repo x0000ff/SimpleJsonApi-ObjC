@@ -63,3 +63,8 @@ Response:
 
 - [https://github.com/AFNetworking/AFNetworking](https://github.com/AFNetworking/AFNetworking)
 - [https://github.com/jdg/MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+
+# Todo
+
+- Use [#128: NSURLQueryItem & NSURLComponents](https://littlebitesofcocoa.com/128-nsurlqueryitem-nsurlcomponents)
+- Async [https://github.com/maybewaityou/Async](https://github.com/maybewaityou/Async)
